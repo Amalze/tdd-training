@@ -16,13 +16,6 @@ public class ListFactoryTest {
     }
 
     @Test
-    public void shouldReturnListOfIntegerFrom1To5When5IsGiven(){
-        ListFactory listFactory = new ListFactory();
-        List result = listFactory.getListOfInteger(5);
-        Assertions.assertEquals(Arrays.asList(1, 2, 3, 4, 5),result);
-    }
-
-    @Test
     public void shouldReturnListOfIntegerFrom1To15When15IsGiven(){
         ListFactory listFactory = new ListFactory();
         List result = listFactory.getListOfInteger(15);

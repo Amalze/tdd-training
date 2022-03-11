@@ -49,5 +49,11 @@ class FizzBuzzConverterTest {
         assertEquals("FizzBuzz",result);
     }
 
+    @Test
+    public void shouldReturnNumberWhenInputIsNotMultipleOf3Or5Or15(){
+        FizzBuzzConverter fizzBuzzConverter=new FizzBuzzConverter();
+        String result=fizzBuzzConverter.convert(1);
+        assertEquals("1",result);
+    }
 
 }

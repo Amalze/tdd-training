@@ -12,7 +12,7 @@ public class FizzBuzzEngineTest {
     @Test
     public void shouldReturn12FizzWhen3IsGiven(){
         FizzBuzzEngine fizzBuzzEngine = new FizzBuzzEngine();
-        List result = fizzBuzzEngine.getFizzBuzzList(3);
-        assertEquals(Arrays.asList(1, 2,"Fizz"),result);
+        List result = fizzBuzzEngine.getFizzBuzzList(5);
+        assertEquals(Arrays.asList("1", "2","Fizz", "4", "Buzz"),result);
     }
 }

@@ -1,10 +1,16 @@
 package fizzBuzz;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class FizzBuzzEngine {
-    public List getFizzBuzzList(int i) {
-        return Arrays.asList(1, 2, "Fizz");
+    public List getFizzBuzzList(int n) {
+        FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
+        ListFactory listFactory = new ListFactory();
+        List listFizzBuzz = new ArrayList();
+        for( Object e : listFactory.getList(n)){
+            listFizzBuzz.add(fizzBuzzConverter.convert((Integer) e));
+        }
+        return listFizzBuzz;
     }
 }
